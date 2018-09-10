@@ -1,20 +1,26 @@
 {
-  "name": "sandisk_jasmin_protractor",
+  "name": "sandisk-cucumber",
   "version": "1.0.0",
-  "description": "jasmin tests using protractor for sandisk",
+  "description": "",
   "main": "index.js",
+  "author": "Dzmitry_Bashlak",
+  "license": "ISC",
   "dependencies": {
     "chai": "^4.1.2",
-    "jasmine": "^3.2.0",
-    "npm": "^6.4.1",
-    "protractor": "^5.4.1"
+    "cucumber": "^4.2.1",
+    "cucumber-html-reporter": "^3.0.4",
+    "protractor": "^5.4.0",
+    "protractor-cucumber-framework": "^6.0.0",
+    "winston": "^2.4.4",
+    "yargs": "^12.0.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "protractor ./test/config/protractor.config.js",
-    "update": "webdriver-manager update",
-    "postinstall": "webdriver-manager update"
-  },
-  "author": "dzmitry_bashlak",
-  "license": "ISC"
+    "e2e": "protractor ./test/e2e/config/config.js",
+    "pree2e": "del /f combined.log, error.log",
+    "postinstall": "webdriver-manager update",
+    "e2e:full": "npm run pree2e && npm run e2e && npm run e2e:generate-report",
+    "e2e:update": "webdriver-manager update",
+    "e2e:generate-report": "node reporter.js",
+    "e2e:start-server": "start cmd /k \"node_modules\\.bin\\webdriver-manager start\""
+  }
 }

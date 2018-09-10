@@ -1,0 +1,200 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Menu",
+    "line": 2,
+    "id": "menu",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      }
+    ],
+    "uri": "test\\e2e\\features\\menu.feature",
+    "elements": [
+      {
+        "id": "menu;verify-user-can-open-menu",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify user can open menu",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@sandisk",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open \"https://www.sandisk.com//\" url",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5458000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I wait until \"Menu Bar\" is present",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\waiters.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Text of \"Menu Bar Buttons\" should contain \"FOR HOME\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Text of \"Menu Bar Buttons\" should contain \"FOR BUSINESS\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Text of \"Menu Bar Buttons\" should contain \"OEM DESIGN\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Text of \"Menu Bar Buttons\" should contain \"ABOUT SANDISK\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Text of \"Menu Bar Buttons\" should contain \"SUPPORT\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Count of \"Menu Bar Buttons\" should be \"5\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Page title should be \"SanDisk | Global Leader in Flash Memory Storage Solutions\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Text of \"Footer Links\" should contain \"Legal\"",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\validationSteps\\validationSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I wait \"10\" seconds",
+            "match": {
+              "location": "test\\e2e\\step_definitions\\actionSteps\\browserInteractions.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10003000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test\\e2e\\step_definitions\\hooks.js:7"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
