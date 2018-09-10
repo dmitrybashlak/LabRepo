@@ -1,0 +1,20 @@
+{
+  "name": "sandisk_jasmin_protractor",
+  "version": "1.0.0",
+  "description": "jasmin tests using protractor for sandisk",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "jasmine": "^3.2.0",
+    "npm": "^6.4.1",
+    "protractor": "^5.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "protractor ./test/config/protractor.config.js",
+    "update": "webdriver-manager update",
+    "postinstall": "webdriver-manager update"
+  },
+  "author": "dzmitry_bashlak",
+  "license": "ISC"
+}
